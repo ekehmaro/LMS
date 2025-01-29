@@ -1,0 +1,256 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5dc;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 300px;
+  background-color: #264160; 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  width: 100%;
+  margin-top: 20px;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  color: white;
+  text-decoration: none;
+  font-size: 16px; 
+  padding: 8px 12px; 
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-links {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px; 
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px; 
+  display: block;
+  margin: 5px 0; 
+}
+
+
+.dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  background-color: #264160;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1000;
+  
+}
+
+.dropdown-menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  background-color: #f5f5dc; 
+  padding: 20px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.live-classes {
+  margin-bottom: 20px;
+}
+
+.live-class {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white; 
+  padding: 10px 20px;
+  width: 900px;
+  height: 60px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.live-class-title {
+  font-size: 18px;
+}
+
+.join-button {
+  background-color: #264160;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.join-button:hover {
+  background-color: #1e334c;
+}
+
+.course-details {
+  display: flex;
+  gap: 20px;
+}
+
+.course-info {
+  width: 641px;
+  height: 341px;
+  background-color: white; 
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-info-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.course-info-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.calendar {
+  width: 232px;
+  height: 277px;
+  background-color: #f5f5dc; 
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.toggle-arrow {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-menu {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px 0;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+.dropdown .toggle-arrow {
+  transform: rotate(180deg); 
+}
+
+.dropdown .dropdown-toggle:hover {
+  color: #0073e6;
+}
+

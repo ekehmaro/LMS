@@ -1,0 +1,207 @@
+.create-container {
+  display: flex;
+  height: 750px;
+   overflow: hidden;
+  font-style: Raleway;
+}
+
+
+.form-container {
+  flex: 1;
+  padding: 2rem;
+  padding-left: 5rem !important; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to right, #264160 20%, #264160 100%);
+  z-index: 2;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+  top: 60px;
+  left: 60px;
+  gap: 12px;
+}
+
+.form-title {
+  font-size: 52px;
+  line-height: 61px;
+  letter-spacing: 3%;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.login-prompt {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.login-link {
+  color: #fff; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.name-fields {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.input-field {
+  font-size: 1rem;
+  background-color: #F4F9EE14;
+  color: white;
+  border: 1px solid #ccc;
+  width: hug(24px);
+  height: hug(52px);
+  top: 286px;
+  left: 60px;
+  border-radius: 10px;
+  padding-left:19px ;
+  padding-top:7.5px ;
+  padding-bottom: 7.5px;
+  padding-right: 19px;
+  
+}
+
+.input-field.full-width {
+ top: 362px;
+  left: 60px;
+  border-radius: 10px;
+  padding-top:7.5px ;
+  padding-right: 12px;
+  padding-bottom: 7.5px;
+  padding-left: 12px;
+  gap: 424px;
+  background-color: #F4F9EE14 !important;
+  border-color:  white;
+  color: white;
+  margin-bottom: 3rem;
+  width: 490px !important;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.checkbox-container input {
+  margin-right: 0.5rem;
+}
+
+.terms-label {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.terms {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.terms-link:hover {
+  text-decoration: underline;
+}
+
+.submit-button {
+  background-color: #1B998B;
+  color: white;
+  font-size: 1rem;
+    border: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 490px !important;
+  height: 52px;
+  top: 570px;
+  left: 60px;
+  padding-top: 16.5px;
+  padding-right: 12px;
+  padding-bottom: 16.5px;
+  padding-left: 12px;
+  gap: 10px;
+
+}
+
+.submit-button:hover {
+  background-color: rgb(7, 98, 88);
+  color: white;
+}
+
+/* Divider styling */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin: 2rem 0;
+  width: 490px; 
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.divider-text {
+  margin: 0 1rem;
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 16.5px;
+  padding-right: 12px;
+  padding-bottom: 16.5px;
+  padding-left: 12px;
+  gap: 12px;
+  width: 450px !important;
+  height: 57px;
+  top: 684px;
+  left: 60px;
+  color: white!important;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #F4F9EE14;
+   border-color:#F4F9EE14 ;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 1rem;
+}
+
+.google-button:hover {
+  background-color:#1B998B;
+  
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.background-image-container {
+  flex: 1;
+  background: linear-gradient(to right, #264160 1%, rgba(55, 66, 88, 0) 98%), 
+  url("pexels-keira-burton-6147369 1.png") -2% center/cover no-repeat;
+  z-index: 1;
+}
