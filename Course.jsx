@@ -11,111 +11,169 @@ const Course = ({ userName = "John Doe", profilePic }) => {
   };
 
   return (
-    <div className="dashboard-wrapper">
+    <div className="course-dashboard-wrapper">
       {/* Sidebar */}
-      <div className="sidebar">
-        <h1 className="app-title">Medee App</h1>
-        <div className="profile-section">
+      <div className="course-sidebar">
+        <h1 className="course-app-title">Medee App</h1>
+        <div className="course-profile-section">
           <img
             src={profilePic || "default-profile.png"}
             alt="Profile"
-            className="profile-picture"
+            className="course-profile-picture"
           />
-          <div className="profile-info">
-            <p className="user-name">{userName}</p>
-            <p className="user-role">Student</p>
+          <div className="course-profile-info">
+            <p className="course-user-name">{userName}</p>
+            <p className="course-user-role">Student</p>
           </div>
         </div>
-        <hr className="separator" />
-        <nav className="nav-links">
+        <hr className="course-separator" />
+        <nav className="course-nav-links">
           <Link to="/dashboard">
-            <span className="icon"><i className="fa fa-home"></i></span> Dashboard
+            <span className="course-icon"><i className="fa fa-home"></i></span> Dashboard
           </Link>
-          
-          <div className="dropdown">
-            <Link to="/course" className="dropdown-toggle" onClick={toggleDropdown}>
-              <span className="icon"><i className="fa fa-book"></i></span> Courses
-              <i className={`fa ${dropdownOpen ? "fa-chevron-up" : "fa-chevron-down"} toggle-arrow`}></i>
+          <div className="course-dropdown">
+            <Link to="/course" className="course-dropdown-toggle" onClick={toggleDropdown}>
+              <span className="course-icon"><i className="fa fa-book"></i></span> Courses
+              <i className={`fa ${dropdownOpen ? "fa-chevron-up" : "fa-chevron-down"} course-toggle-arrow`}></i>
             </Link>
             {dropdownOpen && (
-              <div className="dropdown-menu">
+              <div className="course-dropdown-menu">
                 <Link to="/resource">Resources</Link>
                 <Link to="/assignment">Assignments</Link>
                 <Link to="/announcement">Announcements</Link>
-                <Link to="/grades">Grades</Link>
+                <Link to="#">Grades</Link>
               </div>
             )}
           </div>
-          <Link to="/timetable">
-            <span className="icon"><i className="fa fa-calendar"></i></span> Time Table
+          <Link to="#">
+            <span className="course-icon"><i className="fa fa-calendar"></i></span> Time Table
           </Link>
-          <Link to="/department">
-            <span className="icon"><i className="fa fa-building"></i></span> Department
+          <Link to="#">
+            <span className="course-icon"><i className="fa fa-building"></i></span> Department
           </Link>
-          <Link to="/news">
-            <span className="icon"><i className="fa fa-newspaper-o"></i></span> News
+          <Link to="#">
+            <span className="course-icon"><i className="fa fa-newspaper-o"></i></span> News
           </Link>
-          <Link to="/notification">
-            <span className="icon"><i className="fa fa-bell"></i></span> Notification
+          <Link to="#">
+            <span className="course-icon"><i className="fa fa-bell"></i></span> Notification
           </Link>
-          <div className="footer-links">
-            <Link to="/help">
-              <span className="icon"><i className="fa fa-question-circle"></i></span> Help
+          <div className="course-footer-links">
+            <Link to="#">
+              <span className="course-icon"><i className="fa fa-question-circle"></i></span> Help
             </Link>
-            <Link to="/faq">
-              <span className="icon"><i className="fa fa-info-circle"></i></span> FAQ
+            <Link to="#">
+              <span className="course-icon"><i className="fa fa-info-circle"></i></span> FAQ
             </Link>
           </div>
         </nav>
       </div>
 
-      
-      <div className="main-content">
-        <header className="main-header">
-          <h2 className="dashboard-title">Courses</h2>
-          <div className="header-icons">
+      {/* Main Content */}
+      <div className="course-main-content">
+        {/* Top Header Section */}
+        <div className="course-header-section">
+          <h2 className="course-dashboard-title">Courses</h2>
+          <div className="course-header-icons">
             <input
               type="text"
               placeholder="Search..."
-              className="search-bar"
+              className="course-search-bar"
             />
-            <button className="icon-button"><i className="fa fa-cogs"></i></button>
-            <button className="icon-button"><i className="fa fa-sun-o"></i></button>
-            <button className="icon-button"><i className="fa fa-sign-out"></i></button>
-          </div>
-        </header>
-
-        {/* Live Classes Section */}
-        <div className="live-classes">
-          <div className="live-class">
-            <p className="live-class-title">Math 101</p>
-            <span className="video-icon"><i className="fa fa-video-camera"></i></span>
-            <button className="join-button">Join the Lesson</button>
+            <button className="course-icon-button"><i className="fa fa-cogs"></i></button>
+            <button className="course-icon-button"><i className="fa fa-sun-o"></i></button>
+            <button className="course-icon-button"><i className="fa fa-sign-out"></i></button>
           </div>
         </div>
 
-        {/* Course  Section */}
-        <div className="course-details">
-          <div className="course-info">
-            <div className="course-info-header">
-              <span>Course Title</span>
-              <span>Course Code</span>
-              <span>Semester</span>
-              <span>Lecturer</span>
-              <span>Lecturer Mail</span>
-            </div>
-            <hr />
-            <div className="course-info-content">
-              <span>Introduction to Psychology</span>
-              <span>PSY 101</span>
-              <span>First Semester</span>
-              <span>Dr. John Smith</span>
-              <span>jsmith@example.com</span>
-            </div>
+        {/* First Section - Live Class */}
+        <div className="course-live-class">
+          <div className="course-live-class-info">
+            <span className="course-video-icon"><i className="fa fa-video-camera"></i></span>
+            <p className="course-title">Math 101</p>
+            <p className="course-teacher">Miss Preye</p>
+            <button className="course-join-button">Join the Lesson</button>
           </div>
-          <div className="calendar">
-            <p className="calendar-title">Calendar</p>
-            {/*  calendar functionality here */}
+        </div>
+
+       
+      {/* Second Section - Registered Courses and Calendar */}
+<div className="course-info-section">
+  <div className="course-info">
+    <h3 className="course-info-title">Registered Courses</h3>
+    <div className="course-info-header">
+      <span className="course-header-item">Course Title</span>
+      <span className="course-header-item">Course Code</span>
+      <span className="course-header-item">Semester</span>
+      <span className="course-header-item">Lecturer</span>
+      <span className="course-header-item">Lecturer Email</span>
+    </div>
+    <hr className="course-separator" />
+    <div className="course-info-list">
+      <div className="course-item">
+        <span className="course-item-title">Introduction to Psychology</span>
+        <span className="course-item-code">PSY 101</span>
+        <span className="course-item-semester">First Semester</span>
+        <span className="course-item-lecturer">Dr. Sarah</span>
+        <span className="course-item-email">sarah@gmail.com</span>
+      </div>
+      
+     
+    
+      
+     
+      <hr className="course-separator" />
+      <div className="course-item">
+        <span className="course-item-title">Biology 102</span>
+        <span className="course-item-code">BIO 102</span>
+        <span className="course-item-semester">First Semester</span>
+        <span className="course-item-lecturer">Ms. Laura</span>
+        <span className="course-item-email">laura@gmail.com</span>
+      </div>
+      <hr className="course-separator" />
+      <div className="course-item">
+        <span className="course-item-title">Computer Science 101</span>
+        <span className="course-item-code">CS 101</span>
+        <span className="course-item-semester">Second Semester</span>
+        <span className="course-item-lecturer">Prof. Alan</span>
+        <span className="course-item-email">alan@gmail.com</span>
+      </div>
+      <hr className="course-separator" />
+      <div className="course-item">
+        <span className="course-item-title">Physics 101</span>
+        <span className="course-item-code">PHY 101</span>
+        <span className="course-item-semester">First Semester</span>
+        <span className="course-item-lecturer">Dr. Evans</span>
+        <span className="course-item-email">evans@gmail.com</span>
+      </div>
+    </div>
+  </div>
+
+  <div className="course-calendar">
+    <p className="course-calendar-title">Calendar</p>
+    {/* Calendar functionality here */}
+  </div>
+</div>
+
+
+        {/* PDF Download Button */}
+        <div className="course-timetable-download">
+          <button className="course-download-btn">Download Timetable (PDF)</button>
+        </div>
+
+        {/* Scheduled Videos Section */}
+        <div className="course-scheduled-videos">
+          <h3 className="course-scheduled-videos-title">Scheduled Video Classes</h3>
+          <div className="course-scheduled-video">
+            <span className="course-video-icon"><i className="fa fa-video-camera"></i></span>
+            <p className="course-title">Science 101</p>
+            <p className="course-teacher">Mr. Jack</p>
+            <button className="course-notify-button">Notify Me</button>
+          </div>
+          <div className="course-scheduled-video">
+            <span className="course-video-icon"><i className="fa fa-video-camera"></i></span>
+            <p className="course-title">History 102</p>
+            <p className="course-teacher">Mrs. Linda</p>
+            <button className="course-notify-button">Notify Me</button>
           </div>
         </div>
       </div>
