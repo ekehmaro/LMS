@@ -1,0 +1,222 @@
+/* LCourses.css */
+.lcourses-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.lcourses-sidebar {
+  width: 200px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links-unique {
+  flex-grow: 1;
+}
+
+.lcourses-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.lcourses-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.lcourses-dropdown {
+  position: relative;
+}
+
+.lcourses-dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  background: #34495e;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.lcourses-dropdown-menu a {
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.lcourses-main-content {
+  margin-left: 190px;
+  flex-grow: 1;
+  padding: 0px;
+  background-color: #c5dafa;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.lcourses-main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  margin-bottom: 50px;
+}
+
+.lcourses-search-bar {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 290px;
+}
+
+.lcourses-header-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.lcourses-header-icons i {
+  cursor: pointer;
+}
+
+.lcourses-overview-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 30px;
+}
+
+.lcourses-overview-card {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  
+}
+
+.light-blue {
+  background-color: #3498db;
+  
+}
+
+.orange {
+  background-color: #f39c12;
+}
+
+.green {
+  background-color: #2ecc71;
+}
+
+.lcourses-course-overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 30px;
+  
+}
+
+.lcourses-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.lcoursebig{
+  background-color: white;
+  width: 1000px;
+  margin-left: 170px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+.lcourses-buttons button {
+  padding: 8px 12px;
+  margin-right:19px ;
+  gap: 4px;
+  
+  cursor: pointer;
+}
+
+.lcourses-create-btn {
+  background: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+ 
+}
+
+.lcourses-publish-btn {
+  background: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.lcourses-files-uploaded {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  position: relative;
+}
+
+.lcourses-file-actions {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.lcourses-file-actions button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.lcourses-download-btn {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.lcourses-upload-btn {
+  background: brown;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.lcourses-file-list {
+  margin-top: 50px;
+}
+
+.lcourses-file-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.ash {
+  background: #f0f0f0;
+}
+
+.white {
+  background: white;
+}

@@ -1,0 +1,149 @@
+.coursedetails-container {
+    display: flex;
+  }
+  
+  .coursedetails-main {
+    flex-grow: 1;
+   margin-left: 290px;
+  }
+  
+  .coursedetails-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .coursedetails-icons svg {
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  
+  .coursedetails-content {
+    background: white;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+    width: 1040px;
+    margin-left: 55px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .coursedetails-overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .coursedetails-buttons button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .coursedetails-basicinfo h4 {
+    margin-top: 20px;
+  }
+  
+  .coursedetails-fields {
+    display: flex;
+    gap: 13%;
+    margin-top: 10px;
+    
+    
+  }
+  
+  .coursedetails-fields div {
+    flex: 1;
+  }
+  
+  .coursedetails-fields input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+  }
+  
+  .coursedetails-description {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+    width: 45%;
+  }
+  
+  .coursedetails-toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .coursedetails-toolbar button, .coursedetails-toolbar select {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .coursedetails-description textarea {
+    width: 100%;
+    height: 100px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .coursedetails-date {
+    margin-top: 20px;
+    width: 30%;
+  }
+  .coursedetailss {
+      display: flex;
+      gap: 85px;
+  }
+  .coursedetails-date input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .coursedetails-content-section {
+    margin-top: 40px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+  }
+  
+  .coursedetails-section {
+    
+    justify-content: space-between;
+    
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    
+  }
+  
+  .coursedetails-upload {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    width: 40%;
+  }
+  
+  .coursedetails-upload button {
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  
