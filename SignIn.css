@@ -1,0 +1,111 @@
+
+.signin-container {
+    display: flex;
+    height: 700px;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  /* Left-side form container */
+  .form-container {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right, #264160 20%, #264160 100%);
+    z-index: 2;
+  }
+  
+  .app-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .welcome-text {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  
+  
+  
+  .input-field.full-width {
+    width: 100%;
+    top: 362px;
+  left: 60px;
+  border-radius: 10px;
+  padding-top:7.5px ;
+  padding-right: 12px;
+  padding-bottom: 7.5px;
+  padding-left: 12px;
+  gap: 424px;
+  background-color: #F4F9EE14;
+  color: white;
+  margin-bottom: 1rem;
+  }
+  
+  .forgot-password {
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  
+  .forgot-password-link {
+    color: #0abab5; 
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .forgot-password-link:hover {
+    text-decoration: underline;
+  }
+  
+  .submit-button {
+    background-color: #0abab5;
+    color: white;
+    font-size: 1rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 19px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .submit-button:hover {
+    background-color: #088f95;
+  }
+  
+  .signup-prompt {
+    font-size: 0.9rem;
+    text-align: center;
+    color: white;
+  }
+  
+  .signup-link {
+    color: #0abab5;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  
+
+  .background-image {
+    flex: 1;
+    background: linear-gradient(to right, #264160 6%, rgba(55, 66, 88, 0) 90%), 
+    url("pexels-tima-miroshnichenko-6550129 1.png") center/cover no-repeat;
+    z-index: 1;
+  }
+ 
+  
